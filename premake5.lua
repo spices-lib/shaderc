@@ -19,13 +19,30 @@ project "shaderc"
 		"glslc/src/shader_stage.h",
 		"glslc/src/dependency_info.cc",
 		"glslc/src/dependency_info.h",
+
+		"libshaderc_util/src/args.cc",
+		"libshaderc_util/src/compiler.cc",
+		"libshaderc_util/src/file_finder.cc",
+		"libshaderc_util/src/io_shaderc.cc",
+		"libshaderc_util/src/message.cc",
+		"libshaderc_util/src/resources.cc",
+		"libshaderc_util/src/shader_stage.cc",
+		"libshaderc_util/src/spirv_tools_wrapper.cc",
+		"libshaderc_util/src/version_profile.cc",
 	}
 
 	includedirs
 	{
+		"%{IncludeDir.VulkanSDK}",
+		"%{IncludeDir.glslang}", 
 		"%{IncludeDir.shaderc}",
 		"%{IncludeDir.shaderc}/libshaderc/include",
 		"%{IncludeDir.shaderc}/libshaderc_util/include",
+	}
+
+	defines
+	{
+		"ENABLE_HLSL"
 	}
 
 	filter "system:windows"

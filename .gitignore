@@ -19,3 +19,14 @@ android_test/libs
 android_test/include
 .DS_Store
 .vscode/
+
+/.vs
+/.idea
+/bin-int
+/bin
+
+*.user
+*.sln
+*.vcxproj
+*.csproj
+*.vcxproj.filters
