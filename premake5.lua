@@ -47,13 +47,13 @@ project "shaderc"
 
 	filter "system:windows"
 		systemversion "latest"
-		cppdialect "C++17"
+		cppdialect "C++20"
 		staticruntime "On"
 
 	filter "system:linux"
 		pic "On"
 		systemversion "latest"
-		cppdialect "C++17"
+		cppdialect "C++20"
 		staticruntime "On"
 
 	filter "configurations:Debug"

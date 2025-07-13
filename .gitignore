@@ -30,3 +30,5 @@ android_test/include
 *.vcxproj
 *.csproj
 *.vcxproj.filters
+
+Makefile
