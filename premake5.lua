@@ -33,11 +33,11 @@ project "shaderc"
 
 	includedirs
 	{
-		"%{IncludeDir.VulkanSDK}",
-		"%{IncludeDir.glslang}", 
-		"%{IncludeDir.shaderc}",
-		"%{IncludeDir.shaderc}/libshaderc/include",
-		"%{IncludeDir.shaderc}/libshaderc_util/include",
+		"%{vendor.includes.VulkanSDK}",
+		"%{vendor.includes.glslang}", 
+		"%{vendor.includes.shaderc}",
+		"%{vendor.includes.shaderc}/libshaderc/include",
+		"%{vendor.includes.shaderc}/libshaderc_util/include",
 	}
 
 	defines
